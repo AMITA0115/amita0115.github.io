@@ -22,20 +22,20 @@ $(document).ready(function () {
     $("html").css("scrollBehavior", "auto");
   });
 
-  $(".nav-menu .menu li a").click(function () {
+  $("#nav-menu .menu li a").click(function () {
     // applying again smooth scroll on menu items click
     $("html").css("scrollBehavior", "smooth");
   });
 
   // toggle menu/nav-menu script
   $(".menu-btn").click(function () {
-    $(".nav-menu .menu").toggleClass("active");
+    $("#nav-menu .menu").toggleClass("active");
     $(".menu-btn i").toggleClass("active");
   });
 
   // typing text animation script
   var typed = new Typed(".typing", {
-    strings: ["Back-End Developer","Front-End Developer"],
+    strings: ["Back-End Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -53,7 +53,7 @@ $(document).ready(function () {
     margin: 20,
     loop: true,
     autoplay: true,
-    autoplayTimeOut: 6000,
+    autoplayTimeOut: 2000,
     autoplayHoverPause: true,
     responsive: {
       0: {
